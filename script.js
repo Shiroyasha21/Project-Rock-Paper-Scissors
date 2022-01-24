@@ -56,17 +56,23 @@ function playRound() {
     }
 }
 
+//create a function that run the match five times and announce the winner
+
 function game() {
     for (i=0; i < 5; i++) {
         playRound();
+    }
+    if (tieTally > 0) {
+        alert(`The game ends! You scored ${playerTally} points while your opponent got ${computerTally} points! There's a total of ${tieTally} ties in the game!`)
+    } else {
+        alert(`Game ends! You scored ${playerTally} while your opponent got ${computerTally}!`)
     }
 }
 
 
 
 
-console.log("player tally: ", playerTally);
-console.log("computer tally: ", computerTally);
+
 
 console.log("mathc", game());
 
@@ -76,6 +82,6 @@ console.log("mathc", game());
 
 
 
-//create a function that run the match five times and announce the winner
+
 
 
