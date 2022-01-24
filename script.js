@@ -4,8 +4,13 @@
 
 function playerSelection() {
     let userData = prompt("Rock, Paper, or Scissors? Choose one: ");
-    let userSelection = userData.toLowerCase();
-    return userSelection;
+    if (userData === "" || userData === null) {
+        alert("Please choose one and only one!")
+        let userSelection = prompt("Rock, Paper, or Scissors? Choose one: ").toLowerCase();
+        return userSelection;
+    }
+    let userDataSelected = userData.toLowerCase();
+    return userDataSelected;
 }
 
 
@@ -74,7 +79,7 @@ function game() {
 
 
 
-console.log("mathc", game());
+game();
 
 //console.log("Player selection: ", playerSelection());
 //console.log("computer selection: ", computerPlays());
