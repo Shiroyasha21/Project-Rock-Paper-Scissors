@@ -1,6 +1,24 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #a8d0e6;
+}
+
+img {
+    object-fit: fill;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.hitpoints {
+    display: flex;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
