@@ -27,7 +27,7 @@ function computerPlays() {
 
 
 //both player and computer selection is match in a round
-//check who won based on the game rules
+//check who won based on the game rule
 //make tally on who wins
 
 let playerTally = 0;
