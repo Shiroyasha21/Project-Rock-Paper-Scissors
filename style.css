@@ -4,12 +4,19 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #a8d0e6;
+    
+}
+
+input {
+    object-fit: fill;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 img {
     object-fit: fill;
-    max-width: 150px;
     max-height: 150px;
+    max-width: 150px;
 }
 
 .hitpoints {
