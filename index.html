@@ -8,42 +8,40 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
-        <header class="header">
-            <h1>Rock | Paper | Scissors</h1>
-            <p>lorem ipsum</p>
-        </header>
-
-        <div class="hitpoints">
-            <div class="player">
-                <div class="text">Player 1</div>
-                <div class="hearts"></div>
+        <div class="gameStage">
+            <div class="title">Rock Paper Scissors</div>
+            <div class="participants">
+                <div class="player">Player</div>
+                <div class="score">
+                    <div id="playerScore">
+                        <span>0</span>
+                    </div>
+                    <div id="compScore">
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="computer">Computer</div>
             </div>
-            <div class="versus">
-                <img class="vsIcon" src="images/versus.png" alt="Versus Logo">
-            </div>
-            <div class="computer">
-                <div class="text">Player 2</div>
-                <div class="hearts"></div>
-            </div>
-        </div>
-
-        <div class="stage">
-
-        </div>
-
-        <div class="controls">
-            <div class="controlselection">
-                <div class="text">Controls</div>
-            </div>
-            <div class="imageControl">
-                <input type="image" src="images/rock.jpg">
-                <input type="image" src="images/scissor.jpg">
-                <input type="image" src="images/paper.png">
+            <div class="choiceReflection">
+                <div class="playerReflection" id="player">
+                    🤜
+                </div>
+                <div class="computerReflection" id="computer">
+                    🤛
+                </div>                
             </div>
         </div>
-        
+        <div class="choices">
+            <button class="btnChoice" data-key="rock" value="rock">🪨</button>
+            <button class="btnChoice" data-key="paper" value="paper">🗞️</button>
+            <button class="btnChoice" data-key="scissors" value="scissors">✂️</button>
+        </div>
+        <div id="gameResults" class="results">
+            Choose your hand!
+        </div>
 
         <script src="script.js" async defer></script>
     </body>

@@ -1,31 +1,94 @@
 body {
+    background-color: #4F4F51;
+}
+
+.gameStage {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #a8d0e6;
+    flex-direction: column;
+}
+
+.participants {
+    display: flex;
+    flex-direction: row;
     
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    color: #D6D6D6;
 }
 
-input {
-    object-fit: fill;
-    max-width: 150px;
-    max-height: 150px;
-}
-
-img {
-    object-fit: fill;
-    max-height: 150px;
-    max-width: 150px;
-}
-
-.hitpoints {
+.score {
     display: flex;
+    gap: 1.5rem;
 }
 
-.controls {
+#playerScore {
+    margin-left: 60px;
+}
+
+#compScore {
+    margin-right: 60px;
+}
+
+.score {
+    color: #C3073F;
+}
+
+.choices {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 120px;
+    border-style: solid;
+    border-color: #D6D6D6;
+    width: 500px;
+    height: 150px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-style: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F58F7C;
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5rem;
+    transition: 150ms;
+}
+
+button:hover {
+    transform: scale(1.5);
+}
+
+.choiceReflection {
+    display: flex;
+    font-size: 10rem;
+    gap: 8.5rem;
+    margin-top: 50px;
+}
+
+#gameResults {
+    font-size: 3.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #D6D6D6;
+    margin-top: 3.5rem;
 }
